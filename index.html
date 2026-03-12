@@ -13,7 +13,7 @@
   <body>
     <nav>
       <span class="spotify"><i class="fa-brands fa-spotify"></i></span>
-      <span class="home"><i class="fa-solid fa-house"></i></span>
+      <a href="index.html"><span class="home"><i class="fa-solid fa-house"></i></span></a>
       <div class="search">
         <span class="sera"><i class="fa-solid fa-magnifying-glass"></i></span>
         <input
@@ -26,12 +26,12 @@
         <a href="" class="fin"><i class="fa-solid fa-box-archive"></i></a>
         </div>
       <span class="span1">
-        <a class="a1" href="">Premium</a>
+        <a class="a1" href="https://www.spotify.com/np-en/premium/">Premium</a>
         <a class="a2" href="">Support</a>
         <a class="a3" href="">Download</a>
       </span>
       <span class="bar">|</span>
-      <a href=""
+      <a href="https://open.spotify.com/download"
         ><span class="install"
           ><i class="fa-regular fa-circle-down"></i> Install App</span
         ></a
@@ -46,7 +46,7 @@
     <p>Sign up to get unlimited songs and podcasts.</p>
   </div>
 
-  <button class="signup-btn">Sign up free</button>
+  <a href="signup.html"><button class="signup-btn">Sign up free</button></a>
 </div>
 
     <div class="content">
@@ -101,11 +101,11 @@
             <a href=""><div class="all">Show all</div></a>
           </div>
           <div class="cards">
-            <div class="card">
+            <div class="card" onclick="playsong('kochara','icon1')">
               <div class="image">
                 <img src="topic1_img/kachara.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon1" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""
@@ -114,51 +114,76 @@
               >
               <a class="song-artist" href="">Jhon Rai</a>
             </div>
-            <div class="card">
+            <!-- Audio of song1 -->
+            <audio id="kochara">
+              <source src="songs/Kochara.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="card" onclick="playsong('jaukibasu','icon2')">
               <div class="image">
                 <img src="topic1_img/jaukibasu.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon2" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>Jau Ki Basu</div></a>
               <a class="song-artist" href="">sabin Rai</a>
             </div>
-            <div class="card">
+            <!-- audio of song2 -->
+            <audio id="jaukibasu">
+              <source src="songs/Jau Ki Basu.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="card" onclick="playsong('yahin','icon3')">
               <div class="image">
                 <img src="topic1_img/yahin.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon3" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>Yahin Guzzar Doon</div></a>
               <a class="song-artist" href="">Amaal Malik</a>
             </div>
-            <div class="card">
+            <!-- audio of card 3 -->
+             <audio id="yahin">
+              <source src="songs/Yahin Guzaar Doon.mp3" type="audio/mpeg">
+             </audio>
+
+            <div class="card" onclick="playsong('khat','icon4')" >
               <div class="image">
                 <img src="topic1_img/khat.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon4" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>Khat</div></a>
               <a class="song-artist" href="">Navjot</a>
             </div>
-            <div class="card">
+            <!-- audio of card 4 -->
+            <audio id="khat">
+              <source src="songs/Khat.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="card" onclick="playsong('cheater','icon5')">
               <div class="image">
                 <img src="topic1_img/cheater.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon5" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>CHEATER</div></a>
               <a class="song-artist" href="">YABI The G.O.A.T</a>
             </div>
-            <div class="card">
+            <!-- audio of card5 -->
+             <audio id="cheater">
+              <source src="songs/CHEATER.mp3" type="audio/mpeg">
+             </audio>
+
+            <div class="card" onclick="playsong('stateside','icon6')">
               <div class="image">
                 <img src="topic1_img/stateside.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon6" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""
@@ -167,149 +192,224 @@
               >
               <a class="song-artist" href="">Zara Larsson</a>
             </div>
-            <div class="card">
+            <!-- audio of card6 -->
+             <audio id="stateside">
+              <source src="songs/Stateside + Zara Larsson.mp3" type="audio/mpeg">
+             </audio>
+
+            <div class="card" onclick="playsong('dopamine','icon7')">
               <div class="image">
                 <img src="topic1_img/dopamine.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon7" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>DOPAMINE</div></a>
               <a class="song-artist" href="">Guru Randhawa</a>
             </div>
-            <div class="card">
+            <!-- audio of card7 -->
+             <audio id="dopamine">
+              <source src="songs/DOPAMINE.mp3" type="audio/mpeg">
+             </audio>
+
+            <div class="card" onclick="playsong('pagalpan','icon8')">
               <div class="image">
                 <img src="topic1_img/pagalpan.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon8" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>Kya Bataun Tujhe</div></a>
               <a class="song-artist" href="">Vishal Mishra</a>
             </div>
-            <div class="card">
+            <!-- audio of card8 -->
+             <audio id="pagalpan">
+              <source src="songs/Kya Bataun Tujhe.mp3" type="audio/mpeg">
+             </audio>
+
+            <div class="card" onclick="playsong('sitare','icon9')">
               <div class="image">
                 <img src="topic1_img/sitare.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon9" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>Sitaare</div></a>
               <a class="song-artist" href="">Arjit Singh</a>
             </div>
-            <div class="card">
+            <!-- audio of card9 -->
+             <audio id="sitare">
+              <source src="songs/Sitaare.mp3" type="audio/mpeg">
+             </audio>
+
+            <div class="card" onclick="playsong('jichanta','icon10')">
               <div class="image">
                 <img src="topic1_img/jichanta.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon10" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>Ji Chanta Matina</div></a>
               <a class="song-artist" href="">Sushant KC</a>
             </div>
-            <div class="card">
+            <!-- audio of card 10 -->
+             <audio id="jichanta">
+              <source src="songs/Ji Chanta Matina.mp3" type="audio/mpeg">
+             </audio>
+
+            <div class="card" onclick="playsong('Darkhaast','icon11')">
               <div class="image">
                 <img src="topic1_img/shivaya.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon11" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>Darkhaast</div></a>
               <a class="song-artist" href="">Mithoon</a>
             </div>
-            <div class="card">
+            <!-- audio of card 11 -->
+             <audio id="Darkhaast">
+              <source src="songs/Darkhaast.mp3" type="audio/mpeg">
+             </audio>
+
+            <div class="card" onclick="playsong('saathi','icon12')">
               <div class="image">
                 <img src="topic1_img/saathi.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon12" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>Saathi(60)</div></a>
               <a class="song-artist" href="">Mt.8848</a>
             </div>
-            <div class="card">
+            <!-- audio of card 12 -->
+             <audio id="saathi">
+              <source src="songs/Saathi (60).mp3" type="audio/mpeg">
+             </audio>
+
+            <div class="card" onclick="playsong('jo','icon13')">
               <div class="image">
                 <img src="topic1_img/raja.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon13" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>Jo Ishq Hua</div></a>
               <a class="song-artist" href="">King</a>
             </div>
-            <div class="card">
+            <!-- audio of card 13 -->
+             <audio id="jo">
+              <source src="songs/Jo Ishq Hua.mp3" type="audio/mpeg">
+             </audio>
+
+            <div class="card" onclick="playsong('nachum','icon14')">
               <div class="image">
                 <img src="topic1_img/nachum.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon14" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>NACHUM</div></a>
               <a class="song-artist" href="">RATO RANI, Jamsey</a>
             </div>
-            <div class="card">
+            <!-- audio of card 14 -->
+            <audio id="nachum">
+              <source src="songs/NACHUM.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="card" onclick="playsong('tose','icon15')">
               <div class="image">
                 <img src="topic1_img/tose.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon15" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>Tose Kaise Piya</div></a>
               <a class="song-artist" href="">NANAKI,Ritu Sings</a>
             </div>
-            <div class="card">
+            <!-- audio of card 15 -->
+             <audio id="tose">
+              <source src="songs/Tose Kaise Piya.mp3" type="audio/mpeg">
+             </audio>
+
+            <div class="card" onclick="playsong('Man','icon16')">
               <div class="image">
                 <img src="topic1_img/thescript.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon16" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""
                 ><div>The Man Who Can't</div>
                 <div>Be Moved</div></a
               >
-              <a class="song-artist" href="">Sushant KC</a>
+              <a class="song-artist" href="">The Script</a>
             </div>
-            <div class="card">
+            <!-- audio of card 16 -->
+             <audio id="Man">
+              <source src="songs/The Man Who Can't Be Moved.mp3" type="audio/mpeg">
+             </audio>
+            
+            <div class="card" onclick="playsong('enlightment','icon17')">
               <div class="image">
                 <img src="topic1_img/enlightment.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon17" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>Enlightment</div></a>
               <a class="song-artist" href="">Chirag Khadka</a>
             </div>
-            <div class="card">
+            <!-- audio of card 17 -->
+             <audio id="enlightment">
+              <source src="songs/Enlightenment.mp3" type="audio/mpeg">
+             </audio>
+
+            <div class="card" onclick="playsong('babydoll','icon18')">
               <div class="image">
                 <img src="topic1_img/babydoll.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon18" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>babydoll</div></a>
               <a class="song-artist" href="">Dominic Fike</a>
             </div>
-            <div class="card">
+            <!-- audio of card 18 -->
+             <audio id="babydoll">
+              <source src="songs/Babydoll.mp3" type="audio/mpeg">
+             </audio>
+
+            <div class="card" onclick="playsong('unko','icon19')">
               <div class="image">
                 <img src="topic1_img/unko.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon19" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>Priya Phool</div></a>
               <a class="song-artist" href="">Kobid Bazra</a>
             </div>
-            <div class="card">
+            <!-- audio of card 19 -->
+             <audio id="unko">
+              <source src="songs/Priya Phool.mp3" type="audio/mpeg">
+             </audio>
+
+            <div class="card" onclick="playsong('Ishq','icon20')">
               <div class="image">
                 <img src="topic1_img/lost.png" alt="" />
                 <div class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                  <i id="icon20" class="fa-solid fa-play"></i>
                 </div>
               </div>
               <a class="song-name" href=""><div>Ishq</div></a>
               <a class="song-artist" href="">Faheem Abdullah</a>
             </div>
+            <!-- audio of card 20 -->
+             <audio id="Ishq">
+              <source src="songs/Ishq.mp3" type="audio/mpeg">
+             </audio>
+
           </div>
         </div>
         <div class="topic2">
@@ -751,5 +851,6 @@
             
           </div>
         </div>
+        <script src="script.js"></script>
   </body>
 </html>
